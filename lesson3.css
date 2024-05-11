@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  height: 8%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #99BC85;
+  box-shadow: 0 4px 41px rgb(14 55 54, 14%);
+  padding: 10px 10%;
+  transition: 0.2s;
+  color: white;
+  
+}
+
+
+.navbar {
+  width: calc(100% - 60px);
+  height: 30px;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+
+}
+
+
+  
+
+.navbar ul{
+  padding: 0;
+}
+
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 14px;
+  position: right;
+  color: green;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 13px;
+  margin-left: 25px;
+  position: relative;
+}
+.navbar ul li a.active{
+ 
+  position: relative;
+  font-weight: bold;
+        
+}
+.navbar ul li a::after{
+  content: '';
+  height: 3px;
+  width: 0%;
+  background: #BFD8AF;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+
+
+.navbar ul li a:hover::after {
+  width: 100%;
+  
+}
+
+  .navbar ul li a.active::after,
+  .navbar ul li a:hover::after {
+    width: 100%;
+    background: #BFD8AF;
+}
+
+.navbar ul li a.active::before {
+  content: '';
+  position: absolute;
+  bottom: -5px; 
+  left: 0;
+  width: 100%;
+  height: 3px; 
+  background: #BFD8AF;
+}
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+
+img {
+width: 100%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  width:  100px;
+  height: auto;
+  margin-right: 5x  0px;
+}
+
+.navbar{
+  display: flex;
+}
+
+
+.content{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - 8%);
+}
+
+.content .textt{
+    max-width: 600px;
+    margin-left: 120px;
+    margin-top: 150px;
+    
+}
+
+.content .textt h2
+{
+  color: #333;
+  font-size: 3em;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+
+.content .textt h2 span
+{
+  color: #BFD8AF;
+  font-size: 1.1em;
+  font-weight: 800;
+}
+.span{
+  font-size: 2em;
+}
+
+.content .textt p {
+
+color: #333;
+
+}
+
+.content .textt a{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: #99BC85;
+  color: #fff;
+  border-radius: 25px;
+}
+
+.javaimg img {
+  margin-top: 100px;
+  margin-right: 70px;
+  padding-right: 100px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.6)); 
+}
+  
